@@ -58,7 +58,7 @@ def gravar():
   return render_template('alterar.html')
 
 
-@app.route('/listar', methods=['POST','GET'])
+@app.route('/buscar', methods=['POST','GET'])
 def listar():
   conn = mysql.connect()
   cursor = conn.cursor()
